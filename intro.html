@@ -9,8 +9,7 @@
 
 <body>
 <header>
-    <h1>Test
-    </h1>
+    <h1>Test</h1>
 </header>
 <nav>
     <ul>
@@ -20,9 +19,28 @@
         <li><a href="#Kontakt">Contact</a></li>
     </ul>
 </nav>
-<section class="bakgrund" id="hem">
+<div id="spacer">
     <h1>Hej</h1>
+</div>
+<section class="bakgrund" id="hem">
+    </div>
+<main>
+    <h1>Hej</h1>
+</main>
+    <div id="side">
+        <div id="picture">
+            <p>Hej</p>
+            <!-- <img src="https://www.pedigree.se/sites/g/files/fnmzdf2416/files/2022-12/2.jpg"> -->
+        </div>
+    </div>
+<div id="lower">
+    <h1>Hej</h1>
+</div>
+<div id="footer">
+    <p>Hej</p>
+</div>
 </section>
+
     <style>
     body {
         font-family: Arial, sans-serif;
@@ -61,14 +79,83 @@
             transition: 0.3s;
         }
 .bakgrund{
-    height: 300px;
+    min-height: 600px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 65% 35%;
+    grid-template-areas: 
+    "main side"
+    "lower side"
+    "footer footer";
+}
+main{
+    grid-area: main;
+    background-color:#007bff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgb(0 0 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    text-align: center;
-    font-size: 2.5rem;
+    color: whitesmoke;
+    font-size: xx-large;
 }
+#lower{
+    grid-area: lower;
+    background-color:#007bff;
+    margin: 20px;
+    border-radius: 10px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    box-shadow: 0px 3px 15px rgb(0 0 0);
+}
+#side{
+    grid-area: side;
+    background-color:#0056b3;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgb(0 0 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: #007bff;
+    box-shadow: 0px 3px 15px rgb(0 0 0 / 0.4);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#spacer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: xx-large;
+    color: white;
+    background-color: whitesmoke;
+}
+#footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0056b3;
+    color: whitesmoke;
+    font-size: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgb(0, 0, 0);
+}
+ 
     </style>
     
 </body>

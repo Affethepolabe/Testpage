@@ -9,7 +9,7 @@
 
 <body>
 <header>
-    <h1>Test</h1>
+    <h1>Uppgift 1</h1>
 </header>
 <nav>
     <ul>
@@ -19,47 +19,60 @@
         <li><a href="#Kontakt">Contact</a></li>
     </ul>
 </nav>
-<div id="spacer">
+<div class="spacer" id="hem">
+    <div id="sideL">
+    </div>
+    <div id="midP">
+        <img src="Assets/background.png" >
+    </div>
+    <div id="sideR">
+    </div>
+</div>
+<section class="produkt" id="produkter">
+    </div>
+<div class="prod1">
     <h1>Hej</h1>
 </div>
-<section class="bakgrund" id="hem">
-    </div>
-<main>
-    <h1>Hej</h1>
-</main>
-    <div id="side">
-        <div id="picture">
-            <p>Hej</p>
-            <!-- <img src="https://www.pedigree.se/sites/g/files/fnmzdf2416/files/2022-12/2.jpg"> -->
-        </div>
-    </div>
-<div id="lower">
+<div class="prod2">
     <h1>Hej</h1>
 </div>
-<div id="footer">
-    <p>Hej</p>
+<div class="side">
+</div>
+<div class="sideU">
+</div>
+<div class="sideD">
+</div>
 </div>
 </section>
 
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        background-color: whitesmoke
-    }
-    header{
-        background-color: #007bff;
-        color: white;
-        padding: 1em;
-        text-align: center; 
-     }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #e7f4ff;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: #dbefff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center; 
+}
 
+
+
+
+     nav{
+        position: sticky;
+            top: 100px;
+     }
      nav ul {
             list-style: none;
             padding: 0;
             display: flex;
             justify-content: center;
-            background-color: #0056b3;
+            background-color: #5996d6;
             margin: 0;
         }
 
@@ -78,84 +91,109 @@
             background-color: #003d7a;
             transition: 0.3s;
         }
-.bakgrund{
-    min-height: 600px;
+
+
+
+
+.produkt{
+    min-height: 300px;
     display: grid;
-    grid-template: 1fr 1fr 1fr/ 65% 35%;
+    grid-template: 1fr 1fr / 50% 15% 35%;
     grid-template-areas: 
-    "main side"
-    "lower side"
-    "footer footer";
+    "mainU sideM sideU"
+    "mainD sideM sideD";
 }
-main{
-    grid-area: main;
-    background-color:#007bff;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 3px 15px rgb(0 0 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: whitesmoke;
-    font-size: xx-large;
+    .prod1{
+        grid-area: mainU;
+        background-color:#5996d6;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 15px rgb(49, 92, 144) inset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+        font-size: xx-large;
+    }
+    .prod2{
+        grid-area: mainD;
+        background-color:#5996d6;
+        margin: 20px;
+        border-radius: 10px;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        box-shadow: 0px 3px 15px rgb(49, 92, 144) inset;
+    }
+    .side{
+        grid-area: sideM;
+        background-color: #5996d6;
+        margin: 20px;
+        border-radius: 10px;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        box-shadow: 0px 3px 15px rgb(49, 92, 144) inset;
+    }
+    .sideU{
+        grid-area: sideU;
+        background-color: #5996d6;
+        margin: 20px;
+        border-radius: 10px;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        box-shadow: 0px 3px 15px rgb(49, 92, 144) inset;
+    }
+    .sideD{
+        grid-area: sideD;
+        background-color: #5996d6;
+        margin: 20px;
+        border-radius: 10px;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        box-shadow: 0px 3px 15px rgb(49, 92, 144) inset;
+    }
+
+
+
+
+
+
+.spacer{
+    height: 600px;
+    display: grid;
+    grid-template: 100% / 15% 70% 15;
+    grid-template-areas: 
+    "sideL mid sideR";
 }
-#lower{
-    grid-area: lower;
-    background-color:#007bff;
-    margin: 20px;
-    border-radius: 10px;
-    color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
-    box-shadow: 0px 3px 15px rgb(0 0 0);
-}
-#side{
-    grid-area: side;
-    background-color:#0056b3;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 3px 15px rgb(0 0 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#picture{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    width: 350px;
-    border-radius: 10px;
-    background-color: #007bff;
-    box-shadow: 0px 3px 15px rgb(0 0 0 / 0.4);
-}
-img{
-    width: 100%;
-    height: 100%;
-}
-#spacer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    font-size: xx-large;
-    color: white;
-    background-color: whitesmoke;
-}
-#footer{
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#0056b3;
-    color: whitesmoke;
-    font-size: 50px;
-    border-radius: 10px;
-    box-shadow: 0px 3px 15px rgb(0, 0, 0);
-}
- 
+
+
+    #sideL{
+        grid-area: sideL;
+        background-color: #dbefff;
+    }
+    #sideR{
+        grid-area: sideR;
+        background-color: #dbefff;
+    }
+    #midP{
+        grid-area: mid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 3px 15px rgb(15, 61, 107) inset;
+    }
+    
     </style>
     
 </body>

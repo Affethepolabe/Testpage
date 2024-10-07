@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #e7f4ff;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: #dbefff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center; 
+}
+
+
+
+
+     nav{
+        position: sticky;
+            top: 100px;
+     }
+     nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #5996d6;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #003d7a;
+            transition: 0.3s;
+        }
+
+
+
+
+.produkt{
+    min-height: 300px;
+    display: grid;
+    grid-template: 1fr 1fr / 50% 15% 35%;
+    grid-template-areas: 
+    "mainU sideM sideU"
+    "mainD sideM sideD";
+}
+    .prod1{
+        grid-area: mainU;
+        background-color:#5996d6;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 15px rgb(49, 92, 144) inset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+        font-size: xx-large;
+    }
+    .prod2{
+        grid-area: mainD;
+        background-color:#5996d6;
+        margin: 20px;
+        border-radius: 10px;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        box-shadow: 0px 3px 15px rgb(49, 92, 144) inset;
+    }
+    .side{
+        grid-area: sideM;
+        background-color: #5996d6;
+        margin: 20px;
+        border-radius: 10px;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        box-shadow: 0px 3px 15px rgb(49, 92, 144) inset;
+    }
+    .sideU{
+        grid-area: sideU;
+        background-color: #5996d6;
+        margin: 20px;
+        border-radius: 10px;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        box-shadow: 0px 3px 15px rgb(49, 92, 144) inset;
+    }
+    .sideD{
+        grid-area: sideD;
+        background-color: #5996d6;
+        margin: 20px;
+        border-radius: 10px;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        box-shadow: 0px 3px 15px rgb(49, 92, 144) inset;
+    }
+
+
+
+
+
+
+.spacer{
+    height: 600px;
+    display: grid;
+    grid-template: 100% / 15% 70% 15;
+    grid-template-areas: 
+    "sideL mid sideR";
+}
+
+
+    #sideL{
+        grid-area: sideL;
+        background-color: #dbefff;
+    }
+    #sideR{
+        grid-area: sideR;
+        background-color: #dbefff;
+    }
+    #midP{
+        grid-area: mid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 3px 15px rgb(15, 61, 107) inset;
+    }
+    
